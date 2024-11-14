@@ -1,5 +1,3 @@
-# MobileAppDev-CoffeeShopApp
-
 # Coffee Shop App
 
 ## Overview
