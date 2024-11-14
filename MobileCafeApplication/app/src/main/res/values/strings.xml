@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">MobileCafeApplication</string>
+
+    <!-- Static Image Descriptions -->
+    <string name="hotStuffLogoDescription">Hot Stuff Application Logo</string>
+
+    <!-- Text Field Values -->
+    <string name="emailAddressString">Email Address</string>
+    <string name="passwordString">Password</string>
+    <string name="passwordConfirmString">Confirm Password</string>
+    <string name="nameString">Full Name</string>
+    <string name="phoneString">Phone Number</string>
+
+    <!-- Button Values -->
+    <string name="btnRegisterString">Register</string>
+    <string name="btnLoginString">Login</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnAdd">Add</string>
+
+    <!-- CheckBox Values -->
+    <string name="termsAndConditions">Terms and Conditions</string>
+
+    <!-- Login/Registration Errors -->
+    <string name="enterName">Please Enter Your Full Name</string>
+    <string name="enterEmail">Please Enter A Valid Email Address</string>
+    <string name="enterPassword">Please enter a Password</string>
+
+    <string name="invalidLogin">Please Enter a Valid Email and Password</string>
+    <string name="invalidPassword">Please Enter Valid Password</string>
+
+    <string name="passwordContainNumber">Password Should Contain At Least One Digit</string>
+    <string name="passwordContainLowercase">Password Should Contain At Least One Lowercase Character</string>
+    <string name="passwordContainUppercase">Password Should Contain At Least One Uppercase Character</string>
+    <string name="passwordLength">Password Should Be At Least 8 Characters Long</string>
+    <string name="passwordsMatch">Passwords Do Not Match</string>
+
+    <string name="readTermsAndConditions">Please Read the Terms and Conditions</string>
+
+    <string name="emailExists">Email Already in Use</string>
+    <string name="databaseError">An error occurred</string>
+
+    <!-- Profile Page -->
+    <string name="profile_title">User Profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="hint_full_name">Enter Full Name</string>
+    <string name="email">Email</string>
+    <string name="hint_email">Enter Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="hint_phone_number">Enter Phone Number</string>
+    <string name="update_details">Update Details</string>
+    <string name="password_section">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="hint_old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="admin_section">Admin Section</string>
+    <string name="hint_admit_email">Enter Email to Make Admin</string>
+    <string name="make_admin">Make Admin</string>
+    <string name="update_details_error">Please check your details and try again.</string>
+    <string name="password_change_error">Password change failed. Please try again.</string>
+
+    <!-- Profile Page errors -->
+    <string name="userDoesNotExist">The Specified Email does Not Exist</string>
+    <string name="deleteDefaultAdmin">Cannot Delete Default Admin Account</string>
+    <string name="modifyDefaultAdmin">Cannot Modify Default Admin Details</string>
+    <string name="newOldPasswordMatch">New Password Cannot be the same as Old Password</string>
+
+    <!-- Basket Page -->
+    <string name="basket_title">Basket</string>
+    <string name="item_header">Item</string>
+    <string name="quantity_header">Quantity</string>
+    <string name="price_header">Price</string>
+    <string name="total_header">Total</string>
+    <string name="overall_total">Overall Total: $0.00</string>
+    <string name="payment_button">Payment</string>
+
+    <!-- Menu Page -->
+    <string name="hint_quantity">Qty</string>
+    <string name="toast_added"> added to basket</string>
+    <string name="toast_invalid_quantity">Please enter a valid quantity</string>
+
+    <!-- Menu Page -->
+    <string name="menu">Menu</string>
+    <string name="admin">Admin</string>
+    <string name="add_to_basket">Add to Basket</string>
+    <string name="drinks">Drinks</string>
+    <string name="cookies">Cookies</string>
+    <string name="sandwiches">Sandwiches</string>
+
+    <!-- basket items -->
+    <string name="your_basket">Your Basket</string>
+    <string name="item">Item</string>
+    <string name="quantity">Quantity</string>
+    <string name="price">Price</string>
+    <string name="total">Total</string>
+    <string name="total_colon">Total: </string>
+    <string name="total_hint">0.00</string>
+    <string name="card_holder_name_hint">Card Holder Name</string>
+    <string name="card_details_hint">Card Details (e.g., 1234 5678 9101 1121)</string>
+    <string name="cvc_hint">CVC</string>
+    <string name="payment">Payment</string>
+    <string name="orderNumb">Order Number:</string>
+
+
+    <!-- Menu Items -->
+    <string name="product_title">Product Title</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_price">Item Price</string>
+    <string name="product_quantity">Amount In Stock</string>
+    <string name="subtract_quantity">Subtract Quantity</string>
+    <string name="add_quantity">Add Quantity</string>
+    <string name="default_quantity">0</string>
+    <string name="remove">Remove</string>
+    <string name="restore">Restore</string>
+    <string name="save">Save</string>
+    <string name="newItem">New Item</string>
+    <string name="itemNeedsPrice">Item Needs Price</string>
+    <string name="itemNeedsTitle">Item Needs Title</string>
+    <string name="cancelled">Cancelled</string>
+
+
+    <string name="reviewEmpty">Review cannot be empty</string>
+    <string name="review">Review</string>
+    <string name="reviewOrder">Review Order</string>
+
+    <!-- Notification Page -->
+    <string name="notification">Notifications</string>
+    <string name="newNotification">+</string>
+
+    <!-- Payments -->
+    <string name="paymentAccepted">Payment Accepted</string>
+    <string name="paymentError">There was a Payment Error</string>
+    <string name="carNumbDigits">Card Number should be 16 digits long</string>
+    <string name="cardCVC">CVC number should be 3 digits</string>
+    <string name="cardHolderName">Please enter Card Holder Name</string>
+
+    <!-- New Notifications -->
+    <string name="notificaionTitle">New Notification</string>
+    <string name="notificationDesc">Notification Desc</string>
+    <string name="notificationsError">Error Producing Notifications</string>
+    <string name="success">Success</string>
+
+    <string name="adminActionTitle">Admin Action</string>
+    <string name="notificationAccepted">Notification accepted.</string>
+    <string name="actionCancelled">Action cancelled</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+
+    <!-- MenuBar -->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+</resources>

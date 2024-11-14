@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:backgroundTint="@android:color/white"
+    android:clipToPadding="false"
+    android:layout_gravity="center_horizontal">
+
+    <!-- Product Title -->
+    <EditText
+        android:id="@+id/productTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingBottom="6dp"
+        android:text="@string/product_title"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Product Description -->
+
+    <EditText
+        android:id="@+id/productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingBottom="12dp"
+        android:text="@string/product_description"
+        android:textColor="#777777"
+        android:textSize="14sp" />
+
+    <!-- Product Price -->
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingBottom="12dp"
+        android:text="@string/product_price"
+        android:textColor="#FF5722"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Quantity Selector -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Subtract Quantity Button -->
+        <ImageButton
+            android:id="@+id/subtractButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/subtract_quantity"
+            android:padding="8dp"
+            android:src="@drawable/ic_minus" />
+
+        <!-- Quantity EditText -->
+        <EditText
+            android:id="@+id/quantityEditText"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="8dp"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:gravity="center"
+            android:text="@string/default_quantity"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="4dp"
+            android:singleLine="true" />
+
+        <!-- Add Quantity Button -->
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/add_quantity"
+            android:padding="8dp"
+            android:src="@drawable/ic_plus" />
+
+    </LinearLayout>
+
+    <!-- Add to Basket Button -->
+    <Button
+        android:id="@+id/menuScreenBasketBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_basket"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:padding="12dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/RemoveItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:padding="12dp"
+        android:text="@string/remove"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</LinearLayout>

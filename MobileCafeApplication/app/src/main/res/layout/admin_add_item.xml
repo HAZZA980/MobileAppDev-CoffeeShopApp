@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/addItemProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/product_title" />
+
+    <EditText
+        android:id="@+id/addItemTxtName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:hint="@string/product_title"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/addItemProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/product_description" />
+
+    <EditText
+        android:id="@+id/addItemTxtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:hint="@string/product_description"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/addItemProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/product_price" />
+
+    <EditText
+        android:id="@+id/addItemTxtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:hint="@string/default_quantity"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/addItemProductStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/product_quantity" />
+
+    <EditText
+        android:id="@+id/addItemTxtStock"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:hint="@string/default_quantity"
+        android:inputType="number" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topMenuBar"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <!-- Admin Button on the left -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/adminButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8B1313"
+            android:contentDescription="@string/admin"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:visibility="invisible"
+            app:icon="@drawable/ic_admin"
+            app:iconGravity="textStart"
+            app:iconSize="24dp"
+            app:iconTint="@android:color/white"
+            app:iconTintMode="src_in" />
+
+        <!-- Menu Title in the center -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/menu"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Basket ImageButton on the right -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menuScreenBasketBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8B1313"
+            android:contentDescription="@string/add_to_basket"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            app:icon="@drawable/basket"
+            app:iconGravity="textEnd"
+            app:iconSize="24dp"
+            app:iconTint="@android:color/white"
+            app:iconTintMode="src_in" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/productsListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible" />
+
+</LinearLayout>

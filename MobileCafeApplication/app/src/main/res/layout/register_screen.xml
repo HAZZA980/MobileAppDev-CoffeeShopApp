@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.RegisterScreen">
+
+    <Button
+        android:id="@+id/registerScreenBtnRegister"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="btnRegister"
+        android:text="@string/btnRegisterString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/registerScreenBtnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/registerScreenTermsAndConditionsBox" />
+
+    <Button
+        android:id="@+id/registerScreenBtnCancel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="btnCancel"
+        android:text="@string/btnCancel"
+        app:layout_constraintEnd_toStartOf="@+id/registerScreenBtnRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerScreenTermsAndConditionsBox" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="134dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="104dp"
+        android:contentDescription="@string/hotStuffLogoDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffee" />
+
+    <EditText
+        android:id="@+id/registerScreenFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="101dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:hint="@string/nameString"
+        android:inputType="text"
+        android:textColorHint="@color/hintColour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/registerScreenEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="101dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:hint="@string/emailAddressString"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/hintColour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerScreenFullName" />
+
+    <EditText
+        android:id="@+id/registerScreenPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="101dp"
+        android:autofillHints="phone"
+        android:ems="10"
+        android:hint="@string/phoneString"
+        android:inputType="phone"
+        android:textColorHint="@color/hintColour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerScreenEmail" />
+
+    <EditText
+        android:id="@+id/registerScreenPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="101dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/passwordString"
+        android:inputType="text|textPassword"
+        android:textColorHint="@color/hintColour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerScreenPhoneNumber" />
+
+    <EditText
+        android:id="@+id/registerScreenConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="101dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/passwordConfirmString"
+        android:inputType="text|textPassword"
+        android:textColorHint="@color/hintColour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerScreenPassword" />
+
+    <CheckBox
+        android:id="@+id/registerScreenTermsAndConditionsBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="101dp"
+        android:text="@string/termsAndConditions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerScreenConfirmPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

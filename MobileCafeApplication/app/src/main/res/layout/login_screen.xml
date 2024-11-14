@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.LoginScreen">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="134dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="104dp"
+        android:contentDescription="@string/hotStuffLogoDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffee" />
+
+    <EditText
+        android:id="@+id/loginScreenPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="101dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/passwordString"
+        android:inputType="textPassword"
+        android:textColorHint="@color/hintColour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginScreenEmail" />
+
+    <EditText
+        android:id="@+id/loginScreenEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="101dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:hint="@string/emailAddressString"
+        android:inputType="text|textEmailAddress"
+        android:textColorHint="@color/hintColour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/loginScreenBtnLogin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="btnLoginUser"
+        android:text="@string/btnLoginString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loginScreenBtnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/loginScreenPassword" />
+
+    <Button
+        android:id="@+id/loginScreenBtnRegister"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="btnRegisterUser"
+        android:text="@string/btnRegisterString"
+        app:layout_constraintEnd_toStartOf="@+id/loginScreenBtnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginScreenPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
